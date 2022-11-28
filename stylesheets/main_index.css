@@ -63,11 +63,21 @@
 .social-icons a {
     text-decoration: none;
     display: block;
+    color: black;
 }
+.social-icons a:hover {
+    color: rgb(143, 187, 226);
+}
+
 
 .footer-links a {
     text-decoration: none;
     display: block;
+    color: black;
+}
+
+.footer-links a:hover {
+    color: rgb(143, 187, 226);
 }
 
 .footer-links p {
