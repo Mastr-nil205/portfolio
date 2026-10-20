@@ -1,0 +1,6 @@
+[
+  {"title": "Enterprise support", "context": "Professional experience", "items": ["Windows & macOS support", "Endpoint deployment", "Hardware & peripherals", "Incident documentation"]},
+  {"title": "Identity & workplace systems", "context": "Professional experience", "items": ["Active Directory / Entra ID", "Microsoft Intune", "Microsoft 365", "User onboarding & access"]},
+  {"title": "Connectivity", "context": "Professional experience", "items": ["LAN & Wi-Fi troubleshooting", "VPN support", "DNS & DHCP diagnostics", "Shared drives & access"]},
+  {"title": "Software & independent learning", "context": "Personal projects and exploration", "items": ["Python & Flask", "HTML, CSS & Bootstrap", "Vanilla JavaScript", "Linux & self-hosting", "Git & GitHub"]}
+]

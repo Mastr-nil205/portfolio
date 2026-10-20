@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container shell page-content">
+  <header class="page-heading"><p class="eyebrow">Resume / Professional overview</p><h1>The experience.<br><span class="accent">In one place.</span></h1><p>My professional background in enterprise support, endpoint management, and systems configuration.</p></header>
+  {% if resume_available %}
+  <a class="button primary btn" href="{{ url_for('resume_download') }}">Download résumé <span aria-hidden="true">↓</span></a>
+  <p class="source-note">Desktop Support Technician · PDF · 2 pages</p>
+  {% else %}
+  <div class="resume-note"><h2>A downloadable résumé is on the way.</h2><p>In the meantime, explore my experience or visit my professional profile.</p><div class="actions"><a class="button primary btn" href="{{ url_for('experience') }}">View experience →</a><a class="text-link" href="{{ profile.linkedin }}">LinkedIn ↗</a></div></div>
+  {% endif %}
+</div>
+{% endblock %}

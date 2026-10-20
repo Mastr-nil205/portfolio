@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container shell">
+  <header class="page-heading"><p class="eyebrow">Projects / Technical work</p><h1>Ideas are a start.<br><span class="accent">The details are the work.</span></h1><p>A growing record of personal projects, implementation decisions, and what I’m learning by building.</p></header>
+  <section class="page-content" aria-label="Browse projects">
+    <form class="project-filter row g-3 align-items-end" action="{{ url_for('projects') }}" method="get" role="search" aria-label="Search projects">
+      <div class="col-md-6"><label class="form-label" for="project-search">Search projects</label><input class="form-control" id="project-search" type="search" name="q" maxlength="100" value="{{ query }}" placeholder="Try Python, Flask, or web development"></div>
+      <div class="col-md-3"><label class="form-label" for="project-category">Category</label><select class="form-select" id="project-category" name="category"><option value="">All categories</option>{% for option in categories %}<option value="{{ option }}"{% if category == option %} selected{% endif %}>{{ option }}</option>{% endfor %}</select></div>
+      <div class="col-md-3 filter-actions"><button class="button primary btn" type="submit">Find projects <span aria-hidden="true">→</span></button></div>
+    </form>
+    <div class="results-heading"><p>{{ projects|length }} project{{ '' if projects|length == 1 else 's' }}{% if query %} matching “{{ query }}”{% endif %}</p>{% if query or category %}<a href="{{ url_for('projects') }}">Clear filters</a>{% endif %}</div>
+    <div class="work-list">
+      {% for project in projects %}
+      <a class="work-row" href="{{ url_for('project_detail', slug=project.slug) }}"><span>{{ '%02d'|format(loop.index) }}</span><div><p class="eyebrow">{{ project.category }}</p><h2>{{ project.title }}</h2><p>{{ project.summary }}</p><div class="tags">{% for technology in project.technologies %}<span>{{ technology }}</span>{% endfor %}</div><span class="status">{{ project.status }}</span></div><span aria-hidden="true">↗</span></a>
+      {% else %}<div class="empty-state"><h2>No matching projects.</h2><p>Try another search term or return to the complete list.</p><a class="text-link" href="{{ url_for('projects') }}">View all projects →</a></div>{% endfor %}
+    </div>
+    <div class="contact-band"><p class="eyebrow">Follow the work</p><a class="text-link" href="{{ profile.github }}">Explore my GitHub profile ↗</a></div>
+  </section>
+</div>
+{% endblock %}

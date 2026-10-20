@@ -1,0 +1,46 @@
+[
+  {
+    "employer": "Infios",
+    "title": "Desktop Support Technician",
+    "period": "February 2024 — February 2026",
+    "location": "Indianapolis, Indiana",
+    "summary": "Tier 2 support for corporate and development users, hardware and account troubleshooting, Entra ID and Intune onboarding/offboarding, endpoint deployment, and knowledge base documentation.",
+    "verified_on": "2026-10-20",
+    "source_kind": "User-provided résumé",
+    "corroborating_url": "https://www.linkedin.com/in/luigi-josue/details/experience/",
+    "source_path": "/resume/download/"
+  },
+  {
+    "employer": "Ryder System, Inc.",
+    "title": "Systems Configuration Engineer",
+    "period": "March 2023 — February 2024",
+    "location": "Indianapolis, Indiana",
+    "summary": "Configured HPE servers and Dell workstations, prepared Windows Server and endpoint environments, performed quality assurance and troubleshooting, and coordinated device provisioning for client delivery.",
+    "verified_on": "2026-10-20",
+    "source_kind": "User-provided résumé",
+    "corroborating_url": "https://www.linkedin.com/in/luigi-josue/details/experience/",
+    "source_path": "/resume/download/"
+  },
+  {
+    "employer": "Sondhi Solutions",
+    "title": "Desktop Support Technician",
+    "period": "November 2022 — March 2023",
+    "location": "Indianapolis, Indiana",
+    "summary": "Tier 1 and Tier 2 support for municipal clients, including device provisioning, Microsoft 365 and VPN troubleshooting, remote diagnostics, and incident documentation.",
+    "verified_on": "2026-10-20",
+    "source_kind": "User-provided résumé",
+    "corroborating_url": "https://www.linkedin.com/in/luigi-josue/details/experience/",
+    "source_path": "/resume/download/"
+  },
+  {
+    "employer": "Orange Bench, Inc.",
+    "title": "Desktop Support Technician",
+    "period": "July 2022 — November 2022",
+    "location": "Indianapolis, Indiana",
+    "summary": "Tier 1 and Tier 2 support in an MSP environment, Windows and Mac device deployment, Microsoft 365 troubleshooting, Entra ID user administration, onboarding/offboarding, and asset inventory.",
+    "verified_on": "2026-10-20",
+    "source_kind": "User-provided résumé",
+    "corroborating_url": "https://www.linkedin.com/in/luigi-josue/details/experience/",
+    "source_path": "/resume/download/"
+  }
+]
