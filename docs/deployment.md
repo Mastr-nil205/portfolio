@@ -2,6 +2,8 @@
 
 Official documentation reviewed 2026-10-20. Target: Flask/Jinja on a default `.vercel.app` domain. No Vercel project, account connection, preview, or production deployment created.
 
+For executable step-by-step procedures, use [local deployment](local-deployment.md) and [Vercel deployment](vercel-deployment.md). This document records architecture, policy, and maintenance context.
+
 ## Runtime and environments
 
 Export `app` in `app.py`. Pin Python 3.13 and runtime dependencies. Vercel detects Flask, runs it as a function, and serves `public/` from its CDN. Local assets use matching URLs. [Flask guide](https://vercel.com/docs/frameworks/backend/flask).

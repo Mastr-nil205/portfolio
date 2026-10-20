@@ -2,6 +2,8 @@
 
 Flask/Jinja, Bootstrap 5, custom CSS, and vanilla JavaScript. Public professional experience and personal technical work. No database or frontend build step.
 
+Step-by-step guides: [local setup and testing](docs/local-deployment.md) · [Vercel preview, production, and Git deployment](docs/vercel-deployment.md).
+
 ## Run locally
 
 Python 3.13 is required. From the repository in PowerShell:
