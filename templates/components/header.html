@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="container shell header-inner">
+    <a class="brand" href="{{ url_for('home') }}" aria-label="Luigi Josue — Home">
+      <span class="monogram" aria-hidden="true">lj<span>.</span></span>
+      <span>Luigi Josue<span class="brand-subtitle">IT · DEVELOPMENT · SYSTEMS</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu <span aria-hidden="true">+</span></button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      {% for endpoint, label in [('about', 'About'), ('experience', 'Experience'), ('projects', 'Projects'), ('resume', 'Resume'), ('contact', 'Contact')] %}
+      <a href="{{ url_for(endpoint) }}"{% if request.endpoint == endpoint or (endpoint == 'projects' and request.endpoint == 'project_detail') %} aria-current="page"{% endif %}>{{ label }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

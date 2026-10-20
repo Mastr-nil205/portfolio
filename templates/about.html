@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container shell">
+  <header class="page-heading"><p class="eyebrow">About / The person behind the work</p><h1>Rooted in Haiti.<br><span class="accent">Always looking ahead.</span></h1><p>I’m Luigi Josue, an IT professional and technical builder based in Indianapolis, originally from Cap-Haïtien, Haiti.</p></header>
+  <div class="page-content">
+    <section class="editorial-grid"><h2>One connected story.</h2><div class="prose"><p>My interests sit at the intersection of technology and practical problem-solving. Supporting people at work, understanding how systems connect, and building software are different ways to explore that same curiosity.</p><p>Professional support work keeps me close to the people using technology. Personal projects give me room to investigate new tools and learn through implementation.</p></div></section>
+    <section class="editorial-grid"><h2>Two places.<br>A broader perspective.</h2><div class="prose"><p>My background in Haiti and professional development in the United States shape the questions I’m interested in: how technology works, who can access it, and what makes it useful.</p><p>I value independence, clear thinking, and the patience to work through a problem carefully.</p></div></section>
+    <section class="editorial-grid"><h2>A student of the problem.</h2><div class="prose"><p>My independent learning includes Python, web development, Linux, virtualization, and self-hosted systems. I distinguish that exploration from professional production experience.</p><p>This website is a record of my technical work and professional journey, with space to document what I learn along the way.</p><a href="{{ url_for('projects') }}">Explore my projects →</a></div></section>
+  </div>
+</div>
+{% endblock %}

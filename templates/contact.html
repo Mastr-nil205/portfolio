@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container shell">
+  <header class="page-heading"><p class="eyebrow">Contact / Make a connection</p><h1>Let’s find<br><span class="accent">common ground.</span></h1><p>Professional opportunities, technical collaboration, or a thoughtful conversation about something you’re building.</p></header>
+  <section class="page-content" aria-label="Public contact methods">
+    <div class="actions"><a class="button primary btn" href="{{ profile.linkedin }}">Connect on LinkedIn ↗</a><a class="text-link" href="{{ profile.github }}">Explore GitHub ↗</a>{% if profile.email %}<a class="text-link" href="mailto:{{ profile.email }}">Email me →</a>{% endif %}</div>
+    <div class="row g-4 contact-options"><div class="col-md-6"><h2>Professional conversations</h2><p>Opportunities that connect hands-on IT experience with continued technical growth.</p></div><div class="col-md-6"><h2>Technical collaboration</h2><p>Software, systems, networking, and personal projects where there is something useful to learn or build together.</p></div></div>
+    <p class="note">Based in Indianapolis, Indiana, with roots in Cap-Haïtien, Haiti.</p>
+  </section>
+</div>
+{% endblock %}

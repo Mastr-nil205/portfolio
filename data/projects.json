@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "personal-portfolio",
+    "title": "A portfolio built to evolve",
+    "summary": "Rebuilding this personal website with Flask, reusable Jinja templates, and a clear structure for technical work.",
+    "category": "Web development",
+    "status": "In development",
+    "public": true,
+    "technologies": ["Python", "Flask", "Jinja2", "Bootstrap 5", "JavaScript"],
+    "repository_url": "https://github.com/Mastr-nil205/portfolio",
+    "contribution": "I defined the brief, selected a familiar technology stack, and set the content and privacy boundaries. The implementation is being developed with AI assistance.",
+    "sections": [
+      {"heading": "The starting point", "body": "The original site was a single HTML page using Bootstrap. It needed clearer navigation, an updated professional introduction, and a maintainable home for technical projects and experience."},
+      {"heading": "The approach", "body": "Flask renders shared Jinja templates from structured JSON. Project search and category filters work through GET requests, while local CSS, Bootstrap, and small JavaScript modules provide the interface."},
+      {"heading": "Decisions that matter", "body": "Use technologies I can maintain. Keep content separate from presentation. Validate query parameters, escape displayed input, and handle missing pages deliberately. Preserve the original website while developing the replacement."},
+      {"heading": "Current status", "body": "The replacement is in local development. This case study describes work in progress, not a production launch or measured business result. The linked public repository may still show the original site."}
+    ]
+  }
+]

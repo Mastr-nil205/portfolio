@@ -1,0 +1,13 @@
+:root {
+  color-scheme: dark;
+  --bg: #101923;
+  --surface: #15212e;
+  --surface-light: #1c2b39;
+  --ink: #f0f1ed;
+  --muted: #a6b2bd;
+  --accent: #83e1d3;
+  --line: #30404d;
+  --control-border: #78909f;
+  --display: 'Manrope', sans-serif;
+  --body: 'DM Sans', sans-serif;
+}

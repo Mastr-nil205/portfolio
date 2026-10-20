@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container shell">
+  <header class="page-heading"><p class="eyebrow">Experience / Professional background</p><h1>Practical technology.<br><span class="accent">People at the center.</span></h1><p>My background spans desktop support, system configuration, endpoint management, and helping people work through technical problems.</p></header>
+  <div class="page-content">
+    <section aria-labelledby="career-heading"><div class="section-heading"><h2 id="career-heading">Selected experience</h2><a class="text-link" href="{{ profile.linkedin }}">View LinkedIn ↗</a></div>
+      <ol class="timeline">
+        {% for role in experience %}
+        <li class="row g-3"><div class="col-md-4"><p class="role-period">{{ role.period }}</p><p class="role-location">{{ role.location }}</p></div><div class="col-md-8"><p class="eyebrow accent">{{ role.employer }}</p><h3>{{ role.title }}</h3><p>{{ role.summary }}</p></div></li>
+        {% else %}<li><p>Detailed employment history will be added with my updated résumé.</p></li>{% endfor %}
+      </ol>
+      <p class="source-note">Experience summarized from my résumé.{% if resume_available %} <a class="text-link" href="{{ url_for('resume_download') }}">Download résumé ↓</a>{% endif %}</p>
+    </section>
+    <section class="skills-section" aria-labelledby="skills-heading"><div class="section-heading"><div><p class="eyebrow">Knowledge in context</p><h2 id="skills-heading">Technical focus</h2></div></div>
+      <div class="row g-4">{% for group in skills %}<div class="col-md-6"><article class="skill-group"><p class="eyebrow">{{ group.context }}</p><h3>{{ group.title }}</h3><ul>{% for item in group['items'] %}<li>{{ item }}</li>{% endfor %}</ul></article></div>{% endfor %}</div>
+    </section>
+  </div>
+</div>
+{% endblock %}

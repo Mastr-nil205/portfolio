@@ -1,0 +1,17 @@
+.git
+.github
+.venv
+.release
+.pytest_cache
+.cache
+__pycache__
+**/__pycache__
+docs
+tests
+scripts
+index.htm
+stylesheets
+AGENTS.md
+README.md
+requirements-dev.txt
+.env*
